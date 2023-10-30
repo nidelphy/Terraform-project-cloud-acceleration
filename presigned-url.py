@@ -5,7 +5,7 @@ from botocore.exceptions import NoCredentialsError
 s3 = boto3.client('s3', region_name='us-east-2')
 
 # Specify the name of your S3 bucket and the object key you want to generate a pre-signed URL for
-bucket_name = 'your-bucket-name'
+bucket_name = 'your-bucket-name' # Replace with the actual bucket name
 object_key = 'your-object-key'  # Replace with the actual object key
 
 # Generate a pre-signed URL for the object with a 1-hour expiration time (you can adjust the expiration time)

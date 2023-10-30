@@ -90,4 +90,5 @@ python3 main.py
 python3 presigned-url.py
 ``````
 * The presigned URLs for the objects in your S3 bucket should be printed on your EC2 instance's terminal
-* Send me the presigned URL on Slack so I can download the object.  
+* Send me the presigned URL on Slack so I can download the object. 
+* Push all your codes to GitHub and submit the link to the repository as part of your solution
