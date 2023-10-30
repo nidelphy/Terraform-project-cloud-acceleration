@@ -25,9 +25,10 @@ resource "aws_iam_policy" "my_policy" {
         Action = [
           "s3:ListBucket",
           "s3:GetBucketLocation",
+          "s3:ListAllMyBuckets"
         ],
         Resource = [
-          "arn:aws:s3:::s3-bucket-name", # Replace with your S3 bucket ARN
+          "*", # Allow listing all S3 buckets, 
         ],
         Effect = "Allow",
       },
@@ -36,7 +37,7 @@ resource "aws_iam_policy" "my_policy" {
           "s3:GetObject",
         ],
         Resource = [
-          "arn:aws:s3:::s3-bucket-name/*", # Replace with your S3 bucket ARN
+          "arn:aws:s3:::your-bucket-name/*", # Replace with your S3 bucket name
         ],
         Effect = "Allow",
       }
