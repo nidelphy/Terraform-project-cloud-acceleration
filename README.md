@@ -70,7 +70,7 @@ sudo yum install python3-pip -y
 pip3 install boto3
 ```````
 * Create a python file named ``main.py`` and paste the content from the provided Main.py code
-* Edit only line 6 of main.py to replace "your-bucket-name" with your acual bucket name 
+* Edit only line 6 of main.py to replace "your-bucket-name" with your actual bucket name 
 * Run python script by executing the following command 
 ```
 python3 main.py
@@ -79,7 +79,7 @@ python3 main.py
 
 # Phase 6: Presigned URL 
 * Create a Python file named presigned-url.py and paste the content from the provided presigned-url.py code.
-* Edit only line 9 of presigned-url.py to replace "your-object-key" with your actual object key of your uploaded resume.
+* Edit only line 9 of presigned-url.py to replace "your-object-key" with your actual object key of your uploaded object (Use resume key if uploaded).
 * Run the Python script by executing the following command
 ``````
 python3 presigned-url.py

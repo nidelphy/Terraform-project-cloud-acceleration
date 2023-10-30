@@ -1,6 +1,5 @@
 resource "aws_iam_role" "my_role" {
-  name = "my-iam-role" # Replace with your desired IAM role name
-
+  name = "my-iam-role" 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
     Statement = [
@@ -16,7 +15,7 @@ resource "aws_iam_role" "my_role" {
 }
 
 resource "aws_iam_policy" "my_policy" {
-  name        = "my-iam-policy" # Replace with your desired policy name
+  name        = "my-iam-policy" 
   description = "My IAM Policy"
 
   policy = jsonencode({
