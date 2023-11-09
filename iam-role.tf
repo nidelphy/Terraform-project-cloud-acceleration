@@ -37,7 +37,7 @@ resource "aws_iam_policy" "my_policy" {
           "s3:GetObject",
         ],
         Resource = [
-          "arn:aws:s3:::your-bucket-name/*", # Replace with your S3 bucket name
+          "arn:aws:s3:::my-dnv-bucket/*", # Replace with your S3 bucket name
         ],
         Effect = "Allow",
       }
